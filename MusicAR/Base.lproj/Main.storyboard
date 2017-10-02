@@ -1,17 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13127" systemVersion="16F43c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8C0-fE-0Zt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13109"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cHj-m4-Nzt">
+            <objects>
+                <navigationController id="8C0-fE-0Zt" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XrF-eM-r1r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8De-hb-LvI" kind="relationship" relationship="rootViewController" id="lSO-FO-TqL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICk-Uc-pIV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-911" y="170"/>
+        </scene>
+        <!--Intro View Controller-->
+        <scene sceneID="8nD-eG-DBi">
+            <objects>
+                <viewController id="8De-hb-LvI" customClass="IntroViewController" customModule="MusicAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AsY-Ce-mar"/>
+                        <viewControllerLayoutGuide type="bottom" id="NuK-rc-bra"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g6c-MG-OUh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An Inefficient Way To Play Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DF7-F7-hn0">
+                                <rect key="frame" x="64.5" y="323" width="247" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJ3-nE-Bho">
+                                <rect key="frame" x="16" y="588" width="343" height="59"/>
+                                <color key="backgroundColor" red="0.24366417953922426" green="0.71454466689324336" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="FQY-qo-Ieu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Select Playlist">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectMusic:" destination="8De-hb-LvI" eventType="touchUpInside" id="kgf-VY-kih"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MusicAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wj-df-XLR">
+                                <rect key="frame" x="16" y="224" width="343" height="74"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="62"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NuK-rc-bra" firstAttribute="top" secondItem="PJ3-nE-Bho" secondAttribute="bottom" constant="20" id="2YG-fR-X2d"/>
+                            <constraint firstItem="DF7-F7-hn0" firstAttribute="centerY" secondItem="g6c-MG-OUh" secondAttribute="centerY" id="BYE-Ao-t4a"/>
+                            <constraint firstItem="PJ3-nE-Bho" firstAttribute="leading" secondItem="g6c-MG-OUh" secondAttribute="leadingMargin" id="Kmc-31-qm2"/>
+                            <constraint firstItem="8Wj-df-XLR" firstAttribute="trailing" secondItem="g6c-MG-OUh" secondAttribute="trailingMargin" id="W61-Qi-fGG"/>
+                            <constraint firstItem="PJ3-nE-Bho" firstAttribute="trailing" secondItem="g6c-MG-OUh" secondAttribute="trailingMargin" id="Yha-5U-HFw"/>
+                            <constraint firstItem="NuK-rc-bra" firstAttribute="top" secondItem="PJ3-nE-Bho" secondAttribute="bottom" constant="20" id="Yhj-9t-gUq"/>
+                            <constraint firstItem="PJ3-nE-Bho" firstAttribute="leading" secondItem="g6c-MG-OUh" secondAttribute="leadingMargin" id="fUP-M5-JUI"/>
+                            <constraint firstItem="DF7-F7-hn0" firstAttribute="centerX" secondItem="g6c-MG-OUh" secondAttribute="centerX" id="j3N-mo-8U5"/>
+                            <constraint firstItem="8Wj-df-XLR" firstAttribute="leading" secondItem="g6c-MG-OUh" secondAttribute="leadingMargin" id="mCC-ZP-pMr"/>
+                            <constraint firstItem="DF7-F7-hn0" firstAttribute="top" secondItem="8Wj-df-XLR" secondAttribute="bottom" constant="25" id="oXf-0e-caf"/>
+                            <constraint firstItem="PJ3-nE-Bho" firstAttribute="trailing" secondItem="g6c-MG-OUh" secondAttribute="trailingMargin" id="sCT-8Z-wCR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EQV-fu-kar"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vM4-oc-g72" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2.3999999999999999" y="169.56521739130437"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="arvc" id="BV1-FR-VrT" customClass="ARViewController" customModule="MusicAR" sceneMemberID="viewController">
                     <arscnView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="BrB-h1-WRS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -22,6 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="865" y="170"/>
         </scene>
     </scenes>
 </document>

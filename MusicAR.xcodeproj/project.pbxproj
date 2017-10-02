@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		4C00DCBC1F0754CB0087470C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00DCBB1F0754CB0087470C /* AppDelegate.swift */; };
 		4C00DCBE1F0754CB0087470C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C00DCBD1F0754CB0087470C /* art.scnassets */; };
-		4C00DCC01F0754CB0087470C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00DCBF1F0754CB0087470C /* ViewController.swift */; };
+		4C00DCC01F0754CB0087470C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00DCBF1F0754CB0087470C /* ARViewController.swift */; };
 		4C00DCC31F0754CB0087470C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C00DCC11F0754CB0087470C /* Main.storyboard */; };
 		4C00DCC51F0754CB0087470C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C00DCC41F0754CB0087470C /* Assets.xcassets */; };
 		4C00DCC81F0754CB0087470C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C00DCC61F0754CB0087470C /* LaunchScreen.storyboard */; };
 		4C00DCD31F0754CB0087470C /* MusicARTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00DCD21F0754CB0087470C /* MusicARTests.swift */; };
 		4C00DCDE1F0754CB0087470C /* MusicARUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C00DCDD1F0754CB0087470C /* MusicARUITests.swift */; };
+		4C6365DB1F15EC2200AAF6A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6365D91F15EC2200AAF6A9 /* Assets.xcassets */; };
+		4C8DED671F0763DC00E588A1 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DED661F0763DC00E588A1 /* IntroViewController.swift */; };
+		4C8DED771F078BA700E588A1 /* MCMusicGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8DED761F078BA700E588A1 /* MCMusicGrid.swift */; };
+		4CD37CCD1F07555300B60B9D /* MCMusicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD37CCC1F07555300B60B9D /* MCMusicItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 		4C00DCB81F0754CB0087470C /* MusicAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C00DCBB1F0754CB0087470C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C00DCBD1F0754CB0087470C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		4C00DCBF1F0754CB0087470C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C00DCBF1F0754CB0087470C /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		4C00DCC21F0754CB0087470C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C00DCC41F0754CB0087470C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C00DCC71F0754CB0087470C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		4C00DCD91F0754CB0087470C /* MusicARUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicARUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C00DCDD1F0754CB0087470C /* MusicARUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicARUITests.swift; sourceTree = "<group>"; };
 		4C00DCDF1F0754CB0087470C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C6365D91F15EC2200AAF6A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C8DED661F0763DC00E588A1 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		4C8DED761F078BA700E588A1 /* MCMusicGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCMusicGrid.swift; sourceTree = "<group>"; };
+		4CD37CCC1F07555300B60B9D /* MCMusicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCMusicItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 		4C00DCAF1F0754CB0087470C = {
 			isa = PBXGroup;
 			children = (
+				4C6365D91F15EC2200AAF6A9 /* Assets.xcassets */,
 				4C00DCBA1F0754CB0087470C /* MusicAR */,
 				4C00DCD11F0754CB0087470C /* MusicARTests */,
 				4C00DCDC1F0754CB0087470C /* MusicARUITests */,
@@ -101,7 +110,10 @@
 			children = (
 				4C00DCBB1F0754CB0087470C /* AppDelegate.swift */,
 				4C00DCBD1F0754CB0087470C /* art.scnassets */,
-				4C00DCBF1F0754CB0087470C /* ViewController.swift */,
+				4C00DCBF1F0754CB0087470C /* ARViewController.swift */,
+				4C8DED661F0763DC00E588A1 /* IntroViewController.swift */,
+				4CD37CCC1F07555300B60B9D /* MCMusicItem.swift */,
+				4C8DED761F078BA700E588A1 /* MCMusicGrid.swift */,
 				4C00DCC11F0754CB0087470C /* Main.storyboard */,
 				4C00DCC41F0754CB0087470C /* Assets.xcassets */,
 				4C00DCC61F0754CB0087470C /* LaunchScreen.storyboard */,
@@ -236,6 +248,7 @@
 				4C00DCC81F0754CB0087470C /* LaunchScreen.storyboard in Resources */,
 				4C00DCC51F0754CB0087470C /* Assets.xcassets in Resources */,
 				4C00DCC31F0754CB0087470C /* Main.storyboard in Resources */,
+				4C6365DB1F15EC2200AAF6A9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,8 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C00DCC01F0754CB0087470C /* ViewController.swift in Sources */,
+				4CD37CCD1F07555300B60B9D /* MCMusicItem.swift in Sources */,
+				4C8DED771F078BA700E588A1 /* MCMusicGrid.swift in Sources */,
+				4C00DCC01F0754CB0087470C /* ARViewController.swift in Sources */,
 				4C00DCBC1F0754CB0087470C /* AppDelegate.swift in Sources */,
+				4C8DED671F0763DC00E588A1 /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +544,7 @@
 				4C00DCE41F0754CB0087470C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C00DCE51F0754CB0087470C /* Build configuration list for PBXNativeTarget "MusicARTests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +553,7 @@
 				4C00DCE71F0754CB0087470C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4C00DCE81F0754CB0087470C /* Build configuration list for PBXNativeTarget "MusicARUITests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +562,7 @@
 				4C00DCEA1F0754CB0087470C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
